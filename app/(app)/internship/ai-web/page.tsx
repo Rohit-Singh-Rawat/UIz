@@ -31,7 +31,7 @@ const LearningOutcomes = () => {
 			<div className='container mx-auto max-w-7xl px-4 sm:px-6'>
 				<div className='text-center mb-10'>
 					<span className='bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full'>
-						What You'll Learn
+						What You&apos;ll Learn
 					</span>
 					<h2 className='text-3xl font-medium mt-3'>🎓 Learning Outcomes</h2>
 				</div>
