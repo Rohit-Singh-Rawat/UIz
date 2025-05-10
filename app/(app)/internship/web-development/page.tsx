@@ -1,5 +1,13 @@
+import { Metadata } from 'next';
 import Hero from '@/components/internship/shared/Hero';
 import Program from '@/components/internship/shared/program';
+
+export const metadata: Metadata = {
+	title: 'Web Development Internship | LinkVerse',
+	description:
+		'Learn to build and deploy responsive websites with HTML, CSS, and JavaScript. Our web development internship offers 1-3 month programs with hands-on projects.',
+	keywords: ['web development', 'internship', 'HTML', 'CSS', 'JavaScript', 'React', 'portfolio'],
+};
 
 const page = () => {
 	const oneMonthProgram = {

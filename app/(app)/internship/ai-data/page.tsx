@@ -1,5 +1,21 @@
+import { Metadata } from 'next';
 import Hero from '@/components/internship/shared/Hero';
 import Program from '@/components/internship/shared/program';
+
+export const metadata: Metadata = {
+	title: 'AI-First Data Science Internship | LinkVerse',
+	description:
+		'Learn to analyze data, build ML models, and deploy apps with AI assistance. Master data science with the help of ChatGPT, Gemini, and other AI tools.',
+	keywords: [
+		'AI data science',
+		'internship',
+		'Python',
+		'machine learning',
+		'AI-assisted data analysis',
+		'Streamlit',
+		'ChatGPT',
+	],
+};
 
 const LearningOutcomes = () => {
 	const outcomes = [

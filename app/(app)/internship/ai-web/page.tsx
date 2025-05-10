@@ -1,5 +1,21 @@
+import { Metadata } from 'next';
 import Hero from '@/components/internship/shared/Hero';
 import Program from '@/components/internship/shared/program';
+
+export const metadata: Metadata = {
+	title: 'AI-First Web Development Internship | LinkVerse',
+	description:
+		'Learn to build modern websites and applications with AI assistance tools. Master web development with the help of tools like ChatGPT, GitHub Copilot, and Cursor.',
+	keywords: [
+		'AI web development',
+		'internship',
+		'AI-assisted coding',
+		'ChatGPT',
+		'GitHub Copilot',
+		'React',
+		'modern web development',
+	],
+};
 
 const LearningOutcomes = () => {
 	const outcomes = [

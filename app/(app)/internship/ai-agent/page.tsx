@@ -1,5 +1,22 @@
+import { Metadata } from 'next';
 import Hero from '@/components/internship/shared/Hero';
 import Program from '@/components/internship/shared/program';
+
+export const metadata: Metadata = {
+	title: 'AI Agent Development Internship | LinkVerse',
+	description:
+		'Build intelligent AI agents using LLMs, LangChain, and modern AI tooling. Learn to create conversational interfaces, RAG systems, and autonomous agents.',
+	keywords: [
+		'AI agent',
+		'LLM',
+		'LangChain',
+		'RAG',
+		'internship',
+		'autonomous agents',
+		'chatbot development',
+		'prompt engineering',
+	],
+};
 
 const KeyConcepts = () => {
 	const concepts = [

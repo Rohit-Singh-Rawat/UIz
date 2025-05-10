@@ -1,5 +1,21 @@
+import { Metadata } from 'next';
 import Hero from '@/components/internship/shared/Hero';
 import Program from '@/components/internship/shared/program';
+
+export const metadata: Metadata = {
+	title: 'Data Science Internship | LinkVerse',
+	description:
+		'Master Python and data analysis skills to extract insights from real-world datasets. Our data science internship offers hands-on training in machine learning and visualization.',
+	keywords: [
+		'data science',
+		'internship',
+		'Python',
+		'machine learning',
+		'pandas',
+		'numpy',
+		'data visualization',
+	],
+};
 
 const page = () => {
 	const oneMonthProgram = {

@@ -1,5 +1,5 @@
 "use client"
-import { IconMenu2, IconX, IconCode, IconDatabase, IconRobot, IconBrain, IconDeviceSim } from "@tabler/icons-react"
+import { IconMenu2, IconX, IconCode, IconDatabase, IconRobot, IconBrain, IconDeviceSim, IconExternalLink } from "@tabler/icons-react"
 import Link from "next/link"
 import { useState } from "react"
 import Logo from "./Logo"
@@ -16,13 +16,16 @@ const Navbar = () => {
     setResourcesOpen(false)
   }
 
-  const renderNavLink = (href: string, text: string, onClick = closeMenus) => (
+  const renderNavLink = (href: string, text: string, isExternal = false, onClick = closeMenus) => (
     <Link 
       href={href} 
-      className="hover:text-light-primary transition-colors"
+      className="hover:text-light-primary transition-colors flex items-center gap-1"
       onClick={onClick}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
     >
       {text}
+      {isExternal && <IconExternalLink size={14} className="inline" />}
     </Link>
   )
 
@@ -99,7 +102,7 @@ const Navbar = () => {
 									</div>
 								)}
 							</div>
-							{renderNavLink('/profile', 'Job Portal')}
+							{renderNavLink('https://konnectup.ai', 'Job Portal', true)}
 						</div>
 					</div>
 
