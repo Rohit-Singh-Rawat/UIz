@@ -25,8 +25,7 @@ const Navbar = () => {
       rel={isExternal ? "noopener noreferrer" : undefined}
     >
       {text}
-      {isExternal && <IconExternalLink size={14} className="inline" />}
-    </Link>
+        </Link>
   )
 
   const renderDropdownIcon = () => (
@@ -110,7 +109,7 @@ const Navbar = () => {
 					<div className='hidden md:block'>
 						<Link
 							href='/get-started'
-							className='h-11 rounded-md text-sm  font-medium items-center bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:bg-gradient-to-r hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-md px-2.5 py-1 w-full justify-center transition-all duration-200 active:scale-95 active:shadow-inner active:translate-y-0.5 hover:brightness-110 hover:scale-[0.98]  active:scale-[0.97] active:[box-shadow:0_0_0_1px_hsl(210deg_22%_90%),_inset_0_1px_1px_hsl(210,_10%,_68%)] disabled:shadow-none disabled:hover:translate-y-0 disabled:hover:scale-100 hidden md:flex'
+							className='h-11 rounded-md text-sm  font-medium items-center bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:bg-gradient-to-r hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-md  py-1 w-full justify-center transition-all duration-200 active:scale-95 active:shadow-inner active:translate-y-0.5 hover:brightness-110 hover:scale-[0.98]  active:scale-[0.97] active:[box-shadow:0_0_0_1px_hsl(210deg_22%_90%),_inset_0_1px_1px_hsl(210,_10%,_68%)] disabled:shadow-none disabled:hover:translate-y-0 disabled:hover:scale-100 hidden md:flex px-4'
 						>
 							Get Started
 						</Link>
@@ -187,12 +186,15 @@ const Navbar = () => {
 							)}
 						</div>
 						<Link
-							href='/profile'
-							className='block hover:text-light-primary transition-colors py-2'
+							href='https://konnectup.ai'
+							className='flex items-center gap-1 hover:text-light-primary transition-colors py-2'
 							onClick={closeMenus}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							Job Portal
-						</Link>{' '}
+							<IconExternalLink size={14} />
+						</Link>
 						<Link
 							href='/get-started'
 							className='block hover:text-light-primary transition-colors py-2'
